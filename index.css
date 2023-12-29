@@ -1,0 +1,136 @@
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 4px 10.8px 0px rgba(0, 0, 0, 0.25);
+}
+
+.light_gray {
+    color: rgb(144, 142, 142);
+}
+
+.header_image__container {
+    padding-left: 20px;
+}
+
+.menu_items {
+    padding-right: 20px;
+}
+
+.menu_items__list {
+    display: flex;
+    list-style: none;
+}
+
+.menu_items__list>li:hover {
+    color: rgb(252, 141, 15);
+    cursor: pointer;
+}
+
+.menu_items__list>li {
+    padding: 20px;
+    font-size: 18px;
+}
+
+.list__icon {
+    padding: 10px;
+}
+
+.logo {
+    width: 150px;
+}
+
+.app_title {
+    color: rgb(252, 141, 15);
+    font-style: italic;
+}
+
+/** body container css*/
+.body_container {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.body_heading__container {
+    width: 80%;
+    padding: 0px 40px;
+}
+
+.body_list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.body_list>img:hover {
+    box-shadow: 0px 4px 10.8px 0px rgba(0, 0, 0, 0.25);
+}
+
+.body_items_list {
+    width: 120px;
+    border-radius: 50%;
+}
+
+.body_item__label {
+    padding-top: 10px;
+}
+
+.body_list_container>.menu_items__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.body_resto_list {
+    display: flex;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.body_resto_list_item {
+    padding: 5px;
+}
+
+/** resto card css*/
+.resto_card__container {
+    width: 300px;
+    padding: 5px;
+}
+
+.resto_card__container:hover {
+    cursor: pointer;
+    box-shadow: 0px 4px 10.8px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+.resto_card__image>img {
+    width: 100%;
+    border-radius: 5px;
+    height: 150px;
+}
+
+.resto_card__details {
+    padding: 10px;
+}
+
+.resto_card__title {
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    padding-right: 5px;
+}
+
+.resto_card__rating__details {
+    display: flex;
+    align-items: center;
+}
+
+.resto_rating_icon {
+    color: white;
+    background: green;
+    border-radius: 50%;
+    padding: 2.5px;
+    margin-right: 5px;
+}
