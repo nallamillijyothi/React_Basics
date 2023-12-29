@@ -91,6 +91,7 @@
 
 .body_resto_list_item {
     padding: 5px;
+    list-style: none;
 }
 
 /** resto card css*/
