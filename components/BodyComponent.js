@@ -8,11 +8,12 @@ import { useState } from "react";
 const BodyComponent = () => {
 const [restoOList, setRestoList] = useState(restoList)
   function searchItem(data){
+    console.log(restoOList)
     if(data != ''){
       str = data.toLowerCase();
       const dataa = restoOList.filter((item) => {
         return item.cuisines.some(cuisine => {
-          return cuisine.toLowerCase().includes(str)
+          return cuisine.toLowerCase().includes(str) || item.name.toLowerCase().includes(str)
         });
       })
        setRestoList(dataa)
