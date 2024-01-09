@@ -103,7 +103,7 @@
 }
 
 /** resto card css*/
-.resto_card__container {
+.resto_card__container, .shimmer__card {
     width: 300px;
     padding: 5px;
 }
@@ -114,7 +114,7 @@
     border-radius: 5px;
 }
 
-.resto_card__image {
+.resto_card__image, .shimmer__card_img {
     height: 15rem;
 }
 
@@ -179,4 +179,28 @@
 .search_icon{
     padding: 15px;
     cursor: pointer;
+}
+/**shimmer UI */
+.shimmer__card_details{
+    height: 3rem;
+    padding-top: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.shimmer__card_img,.shimmer_card_title, .shimmer_card_location{
+    background-color: #f0f0f0;
+}
+.shimmer_card_title{
+    width: 80%;
+    height: 0.5rem;
+    margin: 3px;
+}
+.shimmer_card_location{
+    width: 60%;
+    height: 0.5rem;
+    margin: 3px;
+}
+.shimmer__card{
+   background-color: white;
 }
