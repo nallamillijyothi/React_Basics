@@ -17,7 +17,7 @@ const BodyComponent = () => {
     );
     const jsonData = await data.json();
     setRestoList(
-      jsonData?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle
+      jsonData?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle
         ?.restaurants
     );
   };
@@ -33,7 +33,12 @@ const BodyComponent = () => {
           );
         });
       });
-      setRestoList(dataa);
+      if(dataa.length == 0){
+        fetchRestoData();
+      }
+      else{
+        setRestoList(dataa);
+      }
     } else {
       fetchRestoData();
     }
