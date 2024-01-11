@@ -1,7 +1,9 @@
+import {Link} from 'react-router-dom';
 const HeaderComponent = () => {
   return (
     <div className="header__container">
       <div className="header_image__container">
+       <Link to="/" >
         <svg
           className="_8pSp- logo"
           viewBox="0 0 559 825"
@@ -29,28 +31,29 @@ const HeaderComponent = () => {
             </linearGradient>
           </defs>
         </svg>
+        </Link>
         <div>
           <p className="light_gray">Madhapur, Hitech city...</p>
         </div>
       </div>
       <div className="menu_items">
         <ul className="menu_items__list">
-          <li className="light_gray">
+          <li className="light_gray menu_item">
             <i className="fa fa-search list__icon" aria-hidden="true"></i>Search
           </li>
-          <li className="light_gray">
+          <Link to="/offers" className="light_gray menu_item">
             <i className="fa fa-info-circle list__icon" aria-hidden="true"></i>
             Offers
-          </li>
-          <li className="light_gray">
+          </Link>
+          <Link to="/help" className="light_gray menu_item">
             <i className="fa fa-question list__icon" aria-hidden="true"></i>
             Help
-          </li>
-          <li className="light_gray">
+          </Link>
+          <li className="light_gray menu_item">
             <i className="fa fa-user-o list__icon" aria-hidden="true"></i>Sign
             In
           </li>
-          <li className="light_gray">
+          <li className="light_gray menu_item">
             <i
               className="fa fa-cart-arrow-down list__icon"
               aria-hidden="true"

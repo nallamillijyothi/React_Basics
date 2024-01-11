@@ -6,6 +6,7 @@ import ShimmerUI from "./ShimmerUI";
 
 const BodyComponent = () => {
   const [restoOList, setRestoList] = useState([]);
+  console.log("usestae",useState());
 
   useEffect(() => {
     fetchRestoData();
@@ -55,7 +56,7 @@ const BodyComponent = () => {
           <ul className="menu_items__list">
             {carousalList.map((list_item) => {
               return (
-                <li className="body_list" key={list_item.id}>
+                <li className="body_list menu_item" key={list_item.id}>
                   <img
                     src={list_item.url}
                     alt={list_item.alt}

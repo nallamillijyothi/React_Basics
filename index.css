@@ -27,12 +27,12 @@
     list-style: none;
 }
 
-.menu_items__list>li:hover {
+.menu_items__list>.menu_item:hover {
     color: #FF993A;
     cursor: pointer !important;
 }
 
-.menu_items__list>li {
+.menu_items__list>.menu_item {
     padding: 20px;
     font-size: 18px;
 }
@@ -210,4 +210,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.error_description{
+    font-style: italic;
+    color: red;
+}
+.error_content{
+    text-align: center;
 }
