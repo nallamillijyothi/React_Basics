@@ -3,6 +3,7 @@ import { carousalList } from "../utils/mockData";
 import Search from "./Search";
 import { useEffect, useState } from "react";
 import ShimmerUI from "./ShimmerUI";
+import {Link} from 'react-router-dom';
 
 const BodyComponent = () => {
   const [restoOList, setRestoList] = useState([]);
@@ -45,6 +46,10 @@ const BodyComponent = () => {
     }
   }
 
+  // function showDetailView(data){
+  //   console.log(data)
+  // }
+
   return (
     <div className="body_container">
       <div className="body_heading__container">
@@ -79,9 +84,9 @@ const BodyComponent = () => {
             ) : (
               restoOList.map((restaurant) => {
                 return (
-                  <li className="body_resto_list_item" key={restaurant.info.id}>
+                  <Link to={`/restaurant/${restaurant.info.id}`} className="body_resto_list_item" key={restaurant.info.id}>
                     <RestoCardComponent restoData={restaurant.info} />
-                  </li>
+                  </Link>
                 );
               })
             )}

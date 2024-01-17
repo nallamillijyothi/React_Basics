@@ -9,7 +9,7 @@
 }
 
 .light_gray {
-    color: #3d4152;
+    color: #8c8d92;
 }
 
 .header_image__container {
@@ -97,6 +97,8 @@
 .body_resto_list_item {
     padding: 5px;
     list-style: none;
+    text-decoration: none;
+    color: black;
 }
 .body_heading__container{
     padding: 25px 0px;
@@ -217,4 +219,53 @@
 }
 .error_content{
     text-align: center;
+}
+
+/** Resto details CSS */
+.resto_details_container{
+    padding: 20px 150px;
+}
+.resto_details_heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.resto_detail_rating{
+    border: 1px solid #f0f0f0;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px;
+    text-align: center;
+}
+.resto_detail_distance{
+    padding: 10px 0px;
+}
+.resto_detail_dotted_line{
+    border-style: dotted;
+    border-top: none;
+}
+.fa-info-circle{
+    color: #FF993A;
+}
+i{
+    font-weight: bold;
+    padding: 5px;
+}
+.resto_detail_section2,.resto_detail_section2_1{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.resto_detail_section2_1 > h4{
+    margin: 0px;
+}
+.resto_menu_block{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu_img{
+    height: 50%;
+    width: 60%;
+    border-radius: 10px;
 }
