@@ -269,3 +269,15 @@ i{
     width: 60%;
     border-radius: 10px;
 }
+/** Contact us Css */
+.contactus_container{
+    padding: 10px 200px;
+    text-align: center;
+}
+.css-1u3bzj6-MuiFormControl-root-MuiTextField-root
+{
+    width: 100%;
+}
+.row_container{
+    padding: 10px;
+}

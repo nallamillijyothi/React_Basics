@@ -7,8 +7,12 @@ import Help from "./components/Help";
 import Offers from "./components/Offers";
 import ErrorPage from "./components/ErrorPage";
 import RestaurantDetails from "./components/RestaurantDetails";
+import ContactUs from "./components/ContactUs";
+import ExcelParser from './components/ExcelParser'
 
 import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.css';
+
 
 
 const App = () => {
@@ -34,6 +38,10 @@ const appRoutes = createBrowserRouter([
         {
           path:'/help',
           element: <Help />
+        },
+        {
+          path:'/contact',
+          element: <ContactUs />
         },
         {
           path:'/offers',

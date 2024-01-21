@@ -49,6 +49,10 @@ const HeaderComponent = () => {
             <i className="fa fa-question list__icon" aria-hidden="true"></i>
             Help
           </Link>
+          <Link to="/contact" className="light_gray menu_item">
+            <i className="fa fa-question list__icon" aria-hidden="true"></i>
+            Contact Us
+          </Link>
           <li className="light_gray menu_item">
             <i className="fa fa-user-o list__icon" aria-hidden="true"></i>Sign
             In
