@@ -12,10 +12,16 @@ import RemoveCircleOutlineIcon from "@mui/icons-material/RemoveCircleOutline";
 import { Link, NavLink } from "react-router-dom";
 
 const SideMenu = () => {
-  const [isExpanded, setExpanded] = useState(0);
+  const [menu, setMenu] = useState(sidemenu);
 
   const handleAccordionChange = (id) => {
-    setExpanded( id === isExpanded || isExpanded === 0 ? false : id);
+    const updatedMenu = menu.map(item => {
+      if (item.id === id) {
+        return { ...item, isExpanded: !item?.isExpanded };
+      }
+      return item;
+    });
+    setMenu(updatedMenu);
   };
   return (
     <Grid container spacing={2} className="sidemenu_container">
@@ -27,18 +33,18 @@ const SideMenu = () => {
           <h4 className="brand_name">Order Flow Pro</h4>
         </Grid>
       </Grid>
-      {sidemenu.map((menuItem) => {
+      {menu.map((menuItem) => {
         return (
           <Grid item xs={12} key={menuItem.id} className="menu__container">
             {menuItem?.menuItems.length > 0 ? (
               <Accordion
                 defaultExpanded
-                expanded={menuItem.id === isExpanded || isExpanded === 0}
+                expanded={menuItem?.isExpanded}
                 onChange={()=>handleAccordionChange(menuItem.id)}
               >
                 <AccordionSummary
                   expandIcon={
-                    isExpanded === menuItem.id || isExpanded === 0? (
+                   menuItem?.isExpanded? (
                       <RemoveCircleOutlineIcon />
                     ) : (
                       <AddCircleOutlineIcon />
