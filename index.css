@@ -1,6 +1,7 @@
-*{
-   font-family: sans-serif ;
+* {
+    font-family: sans-serif;
 }
+
 .header__container {
     display: flex;
     align-items: center;
@@ -100,12 +101,14 @@
     text-decoration: none;
     color: black;
 }
-.body_heading__container{
+
+.body_heading__container {
     padding: 25px 0px;
 }
 
 /** resto card css*/
-.resto_card__container, .shimmer__card {
+.resto_card__container,
+.shimmer__card {
     width: 300px;
     padding: 5px;
 }
@@ -116,7 +119,8 @@
     border-radius: 5px;
 }
 
-.resto_card__image, .shimmer__card_img {
+.resto_card__image,
+.shimmer__card_img {
     height: 15rem;
 }
 
@@ -158,132 +162,247 @@
 }
 
 /** Search bar CSS*/
-.search_bar{
+.search_bar {
     width: 100%;
     height: 38.5px;
     padding: 0px 15px;
     border: none;
     font-size: 18px;
 }
-.search_bar::placeholder{
+
+.search_bar::placeholder {
     font-size: 18px;
     padding: 5px;
 }
-.search_bar:focus-visible{
+
+.search_bar:focus-visible {
     outline: none;
 }
-.search_container{
+
+.search_container {
     display: flex;
     align-items: center;
     border-radius: 5px;
     border: 1px solid #c6c3c3;
 }
-.search_icon{
+
+.search_icon {
     padding: 15px;
     cursor: pointer;
 }
+
 /**shimmer UI */
-.shimmer__card_details{
+.shimmer__card_details {
     height: 3rem;
     padding-top: 5px;
     display: flex;
     flex-direction: column;
     justify-content: start;
 }
-.shimmer__card_img,.shimmer_card_title, .shimmer_card_location{
+
+.shimmer__card_img,
+.shimmer_card_title,
+.shimmer_card_location {
     background-color: #f0f0f0;
 }
-.shimmer_card_title{
+
+.shimmer_card_title {
     width: 80%;
     height: 0.5rem;
     margin: 3px;
 }
-.shimmer_card_location{
+
+.shimmer_card_location {
     width: 60%;
     height: 0.5rem;
     margin: 3px;
 }
-.shimmer__card{
-   background-color: white;
+
+.shimmer__card {
+    background-color: white;
 }
 
 /** Error CSS*/
-.error_container{
+.error_container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.error_description{
+
+.error_description {
     font-style: italic;
     color: red;
 }
-.error_content{
+
+.error_content {
     text-align: center;
 }
 
 /** Resto details CSS */
-.resto_details_container{
+.resto_details_container {
     padding: 20px 150px;
 }
-.resto_details_heading{
+
+.resto_details_heading {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.resto_detail_rating{
+
+.resto_detail_rating {
     border: 1px solid #f0f0f0;
     padding: 10px;
     border-radius: 10px;
     box-shadow: 2px 2px;
     text-align: center;
 }
-.resto_detail_distance{
+
+.resto_detail_distance {
     padding: 10px 0px;
 }
-.resto_detail_dotted_line{
+
+.resto_detail_dotted_line {
     border-style: dotted;
     border-top: none;
 }
-.fa-info-circle{
+
+.fa-info-circle {
     color: #FF993A;
 }
-i{
+
+i {
     font-weight: bold;
     padding: 5px;
 }
-.resto_detail_section2,.resto_detail_section2_1{
+
+.resto_detail_section2,
+.resto_detail_section2_1 {
     display: flex;
     align-items: center;
     padding: 10px;
 }
-.resto_detail_section2_1 > h4{
+
+.resto_detail_section2_1>h4 {
     margin: 0px;
 }
-.resto_menu_block{
+
+.resto_menu_block {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.menu_img{
+
+.menu_img {
     height: 50%;
     width: 60%;
     border-radius: 10px;
 }
+
 /** Contact us Css */
-.contactus_container{
+.contactus_container {
     padding: 10px 200px;
     text-align: center;
 }
-.css-1u3bzj6-MuiFormControl-root-MuiTextField-root
-{
+
+.css-1u3bzj6-MuiFormControl-root-MuiTextField-root {
     width: 100%;
 }
-.row_container{
+
+.row_container {
     padding: 10px;
 }
+
 /** No Internet css*/
-.no_internet{
+.no_internet {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
+
+
+
+/** side menu css */
+
+* {
+    font-family: inter;
+}
+
+.container_block {
+    height: 100%;
+    background-color: #F4F5F9;
+}
+
+.logo_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 100%;
+    height: auto;
+}
+
+.brand_name {
+    font-family: Anton !important;
+    color: rgb(42, 196, 42);
+}
+
+.menu_heading {
+    font-weight: 600;
+    color: #334155;
+}
+
+.sidemenu_container {
+    background-color: white;
+    padding-top: 1rem;
+}
+
+.css-1c35hjw-MuiPaper-root-MuiAccordion-root {
+    box-shadow: none !important;
+}
+
+ .menu__container{
+    padding-top: 8px !important;
+}
+
+.css-ahj2mt-MuiTypography-root:hover,
+.css-ahj2mt-MuiTypography-root>span:hover,
+.signle_menu:hover {
+    color: #FABA15;
+}
+.css-15v22id-MuiAccordionDetails-root{
+    padding: 0px !important;
+}
+
+.submenu_container {
+    padding: 8px 0px;
+}
+
+.submenu_item {
+    text-decoration: none;
+    color: #334155;
+    padding: 10px;
+    padding-left: 2.5rem;
+}
+.single_menu_item{
+    padding-left: 16px !important;
+}
+
+.signle_menu {
+    padding: 0px 16px;
+}
+
+.submenu_item:hover {
+    color: #FABA15;
+}
+
+.active {
+    color: #FABA15;
+    background-color: #F4F5F9; 
+    display: block;
+    width: 100%;
+    font-weight: 600;
+    border-left: 5px solid #FABA15;
+  }

@@ -1422,3 +1422,110 @@ export const carousalList = [
     id: 5,
   },
 ];
+
+export const sidemenu = [
+  {
+    heading: "Dashboard",
+    id: 1,
+    icon: "fa fa-home",
+    path:'/',
+    isExpanded: true,
+    menuItems: [],
+  },
+  {
+    heading: "Orders",
+    id: 2,
+    icon: "fa fa-file-o",
+    path:'',
+    isExpanded: true,
+    menuItems: [
+      {
+        submenu: "Create Order",
+        id:21,
+        path: "/help",
+      },
+      {
+        submenu: "Inter Company Transfer",
+        id:22,
+        path: "/abc",
+      },
+      {
+        submenu: "Customer Portal",
+        id:23,
+        path: "/xyz",
+      },
+      {
+        submenu: "Orders Summary",
+        id:24,
+        path: "/contact",
+      },
+      {
+        submenu: "Log Summary",
+        id:25,
+        path: "/xyz",
+      },
+      {
+        submenu: "Error Summary",
+        id:26,
+        path: "/xyz",
+      },
+    ],
+  },
+  {
+    heading: "Administration",
+    id: 3,
+    icon: "fa fa-gear",
+    path:'',
+    isExpanded: true,
+    menuItems: [
+      {
+        submenu: "Database Admin",
+        id:31,
+        path: "/xyz",
+      },
+      {
+        submenu: "Add Function",
+        id:32,
+        path: "/xyz",
+      },
+    ],
+  },
+  {
+    heading: "User Management",
+    id: 4,
+    icon: "fa fa-user-o",
+    path:'',
+    isExpanded: true,
+    menuItems: [
+      {
+        submenu: "All Users",
+        id:41,
+        path: "/xyz",
+      },
+      {
+        submenu: "Add User",
+        id:42,
+        path: "/xyz",
+      },
+    ],
+  },
+  {
+    heading: "Customer Management",
+    id: 5,
+    icon: "fa fa-users",
+    path:'',
+    isExpanded: true,
+    menuItems: [
+      {
+        submenu: "All Items",
+        id:51,
+        path: "/xyz",
+      },
+      {
+        submenu: "All Ship To",
+        id:52,
+        path: "/xyz",
+      },
+    ],
+  },
+];
