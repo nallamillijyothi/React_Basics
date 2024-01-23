@@ -12,10 +12,21 @@ import ExcelParser from './components/ExcelParser'
 
 import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.css';
+import useInternetStatus from "./utils/useInternetStatus";
+
 
 
 
 const App = () => {
+  const internetStatus = useInternetStatus();
+
+  if(internetStatus == false) {
+    return (
+      <div className="no_internet">
+        <h1>Oops!! No Internet Connection.</h1>
+      </div>
+    )
+  }
   return (
     <div>
       <HeaderComponent />

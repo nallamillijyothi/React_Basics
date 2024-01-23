@@ -8,7 +8,7 @@ const RestaurantDetails = () => {
 
   if (restoInfo == null) return <h1>No Data Available</h1>;
   const {
-    name, 
+    name,
     cuisines,
     areaName,
     sla,
@@ -17,24 +17,18 @@ const RestaurantDetails = () => {
     expectationNotifiers,
     costForTwoMessage,
   } = restoInfo?.data?.cards[0]?.card?.card?.info;
-  // const itemCard =
-  //   resInfo?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[2]?.card.card
-  //     .itemCards;
-  // const { restoHeadingData } = restoInfo?.data?.cards[0]?.card?.card?.info;
-  const { title, itemCards:restoMenuData } =
-    restoInfo?.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[1]?.card?.card;
+  const { title, itemCards: restoMenuData } =
+    restoInfo?.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[1]
+      ?.card?.card;
   return (
     <div className="resto_details_container">
       <div className="resto_details_heading">
         <div className="resto_detail_title">
           <h3>{name}</h3>
-          <small className="light_gray">
-            {cuisines.join(",")}
-          </small>
+          <small className="light_gray">{cuisines.join(",")}</small>
           <div>
             <small className="light_gray">
-              {areaName}{" "}
-              {sla?.lastMileTravelString}
+              {areaName} {sla?.lastMileTravelString}
             </small>
           </div>
         </div>
@@ -49,17 +43,13 @@ const RestaurantDetails = () => {
               {avgRating}
             </div>
             <hr></hr>
-            <div className="light_gray ">
-              {totalRatingsString}
-            </div>
+            <div className="light_gray ">{totalRatingsString}</div>
           </div>
         </div>
       </div>
       <div className="resto_detail_distance">
         <i className="fa fa-info-circle" aria-hidden="true"></i>{" "}
-        <small className="light_gray">
-          {expectationNotifiers[0]?.text}
-        </small>
+        <small className="light_gray">{expectationNotifiers[0]?.text}</small>
       </div>
       <hr className="resto_detail_dotted_line"></hr>
       <div className="resto_detail_cost">

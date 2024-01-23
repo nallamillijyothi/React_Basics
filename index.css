@@ -281,3 +281,9 @@ i{
 .row_container{
     padding: 10px;
 }
+/** No Internet css*/
+.no_internet{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
