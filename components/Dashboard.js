@@ -1,6 +1,9 @@
+import Card from './Card';
 const Dashboard = () =>{
     return (
-        <h6>Hi! I'm Dashboard screen</h6>
+        <Card> 
+            <h6>I'm Dashboard!</h6>
+        </Card>
     )
 }
 

@@ -346,7 +346,7 @@ i {
 
 .brand_name {
     font-family: Anton !important;
-    color: rgb(42, 196, 42);
+    color: #22C55E;
 }
 
 .menu_heading {
@@ -377,7 +377,7 @@ i {
 }
 
 .submenu_container {
-    padding: 8px 0px;
+    padding: 0px;
 }
 
 .submenu_item {
@@ -385,6 +385,10 @@ i {
     color: #334155;
     padding: 10px;
     padding-left: 2.5rem;
+    display: block;
+}
+.collapsed_submenuitem{
+    padding-left: 1rem !important;
 }
 .single_menu_item{
     padding-left: 16px !important;
@@ -406,3 +410,74 @@ i {
     font-weight: 600;
     border-left: 5px solid #FABA15;
   }
+
+ .css-1pe4mpk-MuiButtonBase-root-MuiIconButton-root{
+    color: white !important;
+    background-color: #FABA15 !important;
+    box-shadow: 0px 4px 10.8px 0px rgba(0, 0, 0, 0.25) !important;
+    position: absolute !important;
+    margin-left: 3px !important;
+}
+
+.menu_toggle_container{
+    display: flex;
+    align-items: center;
+}
+.brand_name_container{
+    display: flex;
+    justify-content: center;
+}
+
+.collapsed_menu__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.collapsed_menu_items:hover{
+    color: #FABA15;
+}
+
+
+/** Top Navbar CSS*/
+.navbar_container{
+    padding: 30px 0px;
+}
+.navbar_profilr_container, .profile_section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+}
+.navbar_second_grid{
+    text-align: right;
+}
+.user_profile_info{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.user_name{
+    margin: 0px;
+}
+.profile_icon{
+    cursor: pointer;
+}
+.dark_cloud{
+    color: #64748B;
+}
+.title{
+    font-weight: 700;
+}
+
+/** */
+.card_container{
+    border-radius: 5px;
+     padding: 20px; 
+    background: white;
+}
+.main_container{
+    padding: 0px 20px;
+}

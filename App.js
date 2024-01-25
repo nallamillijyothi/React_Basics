@@ -8,9 +8,11 @@ import Offers from "./components/Offers";
 import ErrorPage from "./components/ErrorPage";
 import RestaurantDetails from "./components/RestaurantDetails";
 import ContactUs from "./components/ContactUs";
+import Navbar from "./components/Navbar";
 import ExcelParser from "./components/ExcelParser";
 import SideMenu from "./components/SideMenu";
 import Dashboard from "./components/Dashboard";
+import { useState } from "react";
 
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.css";
@@ -20,7 +22,7 @@ import Grid from "@mui/material/Grid";
 
 const App = () => {
   const internetStatus = useInternetStatus();
-
+  const [isMenuExpanded, setIsMenuExpanded] = useState(true);
   if (internetStatus == false) {
     return (
       <div className="no_internet">
@@ -28,6 +30,11 @@ const App = () => {
       </div>
     );
   }
+
+  const toggleMenu = (toggleFlag) => {
+    setIsMenuExpanded(toggleFlag);
+  };
+
   return (
     // <div>
     //   {/* <HeaderComponent />
@@ -35,11 +42,12 @@ const App = () => {
     //   <div>footer</div> */}
     // </div>
     <div className="container_block">
-      <Grid container spacing={2}>
-        <Grid item xs={12} md={3}>
-          <SideMenu />
+      <Grid container>
+        <Grid item xs={12} md={isMenuExpanded ? 3 : 1}>
+          <SideMenu isMenuExpanded={isMenuExpanded} toggleMenu={toggleMenu}/>
         </Grid>
-        <Grid item xs={12} md={9}>
+        <Grid item xs={12} md={isMenuExpanded ? 9: 11} className="main_container">
+          <Navbar />
           <Outlet />
         </Grid>
       </Grid>

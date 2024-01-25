@@ -1,8 +1,10 @@
+import Card from './Card'
+
 const Help = () => {
     return(
-        <div>
-            <h6>Hi! I'm Create Order screen</h6>
-        </div>
+        <Card>
+            <h6>I'm create order!</h6>
+        </Card>
     )
 }
 
